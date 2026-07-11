@@ -1,0 +1,229 @@
+:root{
+    --verde-azulado: #0A7068;
+    --rosa: #C92A5A;  
+    --oro: #E8D0A5;     
+    --gris: #989A9C;     
+    --negro-lectura: #2C3033;     
+    --fondo-claro: #FAFAFA;      
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html{
+    height: 100%;
+    background-color: var(--fondo-claro);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.mascot-img{
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.title{
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+
+}
+
+.subtitle{
+    font-size: 1.1rem;
+    color: var(--negro-lectura);
+    margin-bottom: 2.1rem;
+    line-height: 1.4;
+}
+
+.actions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-primary{
+    width: 100%;
+    padding: 16px 24px;
+    background-color: #dcdcdc;
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-primary:hover{
+    background-color: var(--oro);
+    color: white;
+}
+
+.btn-secondary{
+    background: transparent;
+    border: none;
+    color: #000000;
+    font-size: 1.0rem;
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.btn-secondary:hover{
+    text-decoration: underline;
+    color: var(--verde-azulado);
+}
+
+@media (max-width: 480px) {
+    .app-container {
+        border-radius: 0; 
+        max-height: 100vh; 
+        box-shadow: none; 
+        padding: 2rem;
+    }
+}
+
+/* =========================================
+   NUEVOS ESTILOS PARA LA PANTALLA DE LOGIN 
+   ========================================= */
+
+.top-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; 
+    margin-bottom: 2rem;
+}
+
+.back-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.login-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; 
+}
+
+
+.login-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-bottom: 2.5rem;
+}
+
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 16px 45px; 
+    border: 1px solid #757575; 
+    border-radius: 12px; 
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.input-field::placeholder {
+    color: #888;
+}
+
+.input-field:focus {
+    border-color: #000;
+    border-width: 1.5px;
+}
+
+
+.icon-left {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    pointer-events: none; 
+}
+
+.icon-right {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+
+.forgot-password-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    margin-bottom: 3rem; 
+}
+
+.forgot-link {
+    font-size: 0.85rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+    color: var(--verde-azulado);
+}
+
+
+.login-btn {
+    margin-top: auto; 
+}
