@@ -70,7 +70,7 @@ body, html{
 .btn-primary{
     width: 100%;
     padding: 16px 24px;
-    background-color: #dcdcdc;
+    background-color: var(--oro);
     color: #000000;
     border: none;
     border-radius: 50px;
@@ -82,7 +82,6 @@ body, html{
 }
 
 .btn-primary:hover{
-    background-color: var(--oro);
     color: white;
 }
 
